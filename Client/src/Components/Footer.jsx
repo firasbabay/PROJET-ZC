@@ -8,7 +8,7 @@ const Footer = () => {
       background-color: #000000;
       color: var(--shady-white-color);
       opacity: 0.9;
-      height: 400px;
+      height: 350px;
       margin-top: 50px;
     }
     .center-div {
@@ -84,10 +84,10 @@ const Footer = () => {
       {/* //? Footer */}
       <Wrapper>
         <footer id="foot">
-          <h1 id="f-title">Freelanster</h1>
+          <h1 id="f-title">Freelansi</h1>
 
-          <p className="loc">Republic of Dombivli</p>
-          <p className="phone">+91 9136281166</p>
+          <p className="loc">Tunisia</p>
+          <p className="phone">+216 9136281166</p>
           <p className="mail">Random@gmail.com</p>
 
           <svg
@@ -139,7 +139,7 @@ const Footer = () => {
 
         <main>
           <div id="copyright">
-            Copyright &copy; www.Freelanster.com. All rights reserved!
+            Copyright &copy; www.Freelansi.com. All rights reserved!
           </div>
         </main>
       </Wrapper>

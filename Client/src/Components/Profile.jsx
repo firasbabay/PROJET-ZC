@@ -22,56 +22,55 @@ import LinearProgress, {
 
 const Profile = () => {
   const navigate = useNavigate();
-  const { state, dispatch } = useContext(UserContext);
+  const { dispatch } = useContext(UserContext);
 
   const [userData, setUserData] = useState({});
-  dispatch({ type: "USER", payload: true });
-
-  const callProfilePage = async () => {
-    try {
-      const res = await fetch(process.env.BACKEND_URL+"/profile", {
-        method: "GET", //! IMP
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        credentials: "include",
-      });
-      dispatch({ type: "USER", payload: true });
-
-      const data = await res.json();
-      console.log(data);
-      setUserData(data);
-
-      if (!res.status === 200) {
-        const error = new Error(res.error);
-        throw error;
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const callProfilePage = async () => {
+      try {
+        const res = await fetch(process.env.BACKEND_URL || "http://localhost:5000" + "/profile", {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (!res.ok) {
+          if (res.status === 401) {
+            // Handle unauthorized response, e.g., redirect to login
+            console.log("Unauthorized: Redirect to login page");
+            // Redirect code goes here
+          } else {
+            const error = new Error(data.error);
+            throw error;
+          }
+        }
+
+        setUserData(data);
+      } catch (err) {
+        console.log(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     callProfilePage();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, []); // Empty dependency array to ensure it only runs once
 
   const GetHired = () => {
-    navigate(process.env.BACKEND_URL+"/FindFreelancer/GetHired");
+    navigate(process.env.BACKEND_URL + "/FindFreelancer/GetHired");
   };
+
   const PostJobs = () => {
     navigate("/FindJobs/PostJobs");
   };
-
-  const [loading, setLoading] = useState(true);
-  const preloader = document.getElementById("preloader");
-  if (preloader) {
-    setTimeout(() => {
-      preloader.style.display = "none";
-      setLoading(false);
-    }, 0);
-  }
 
   const ColorButton = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText(teal["A400"]),

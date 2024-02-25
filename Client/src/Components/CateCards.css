@@ -172,11 +172,9 @@
 }
 
 .card-content {
-  background-color: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / 0.3) 20%,
-    hsl(0 0% 0% / 1)
-  );
+  background-color: linear-gradient(hsl(0 0% 0% / 0),
+      hsl(20 0% 0% / 0.3) 20%,
+      hsl(0 0% 0% / 1));
   padding: var(--padding);
   margin-top: 150px;
 }
@@ -202,13 +200,13 @@
     transition-duration: 0ms;
   }
 
-  .card-content > *:not(.card-title) {
+  .card-content>*:not(.card-title) {
     transition: opacity 500ms linear;
     opacity: 0;
   }
 
-  .card:hover .card-content > *:not(.card-title),
-  .card:focus-within .card-content > *:not(.card-title) {
+  .card:hover .card-content>*:not(.card-title),
+  .card:focus-within .card-content>*:not(.card-title) {
     transition-delay: 1000ms;
     opacity: 1;
   }
@@ -217,7 +215,7 @@
 .card-title {
   position: relative;
   width: max-content;
-  color: #000000;
+  color: #ffffff;
 }
 
 .card-title::after {
@@ -241,7 +239,7 @@
   color: rgb(255, 255, 255 / 0.85);
   text-align: left;
   padding: 10px;
-  color: #000000;
+  color: #fffafa;
 }
 
 .button {

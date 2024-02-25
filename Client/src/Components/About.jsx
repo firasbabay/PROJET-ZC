@@ -21,7 +21,7 @@ const About = () => {
       font-family: "Andada Pro", serif;
     }
 
-    .container {
+    .containeer {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -40,8 +40,10 @@ const About = () => {
         7.9px 9.3px 10px rgba(0, 0, 0, 0.065),
         19px 22.3px 24.1px rgba(0, 0, 0, 0.085),
         63px 74px 80px rgba(0, 0, 0, 0.13);
-      margin: 0px 25px;
-      padding: 45px 70px;
+      margin: 0px 10px;
+      padding: 45px 50px;
+      width:430px
+      height:800px
     }
 
     .img {
@@ -165,19 +167,19 @@ const About = () => {
           </div>
 
           <div id="divider3"></div>
-          <div className="container">
+          <div className="containeer">
             <div
-              data-aos="fade-right"
+              data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-out"
               className="about-card"
             >
               <div className="img">
-                <img src="https://ik.imagekit.io/bhanu1776/Freelansters/osama.jpg?updatedAt=1682608749618" alt="" loading="lazy"/>
+                <img src="https://i.ibb.co/3FP3Z9V/14993485-1668384806717335-8652133427934231912-n.jpg" alt="" loading="lazy" />
               </div>
               <div className="info">
-                <h3>Osama Shaikh</h3>
-                <span>Frontend Developer</span>
+                <h3>Omar BOUAZIZ</h3>
+                <span>Marketing Manager</span>
               </div>
               <ul className="social">
                 <li>
@@ -192,7 +194,46 @@ const About = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/osamashaikh_786/"
+                    href="*"
+                    className="fab fa-instagram"
+                  >
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="fab fa-linkedin">
+                    <span></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-out"
+              className="about-card"
+            >
+              <div className="img">
+                <img src="https://i.ibb.co/G2msjfs/316953252-3507568072805975-8689247866749259438-n.jpg" alt="" loading="lazy" />
+              </div>
+              <div className="info">
+                <h3>Safouen Ourabi</h3>
+                <span>Backend Developer</span>
+              </div>
+              <ul className="social">
+                <li>
+                  <a href="/" className="fab fa-facebook">
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="fab fa-twitter">
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
                     className="fab fa-instagram"
                   >
                     <span></span>
@@ -207,48 +248,39 @@ const About = () => {
             </div>
 
             <div
-              data-aos="fade-down"
+              data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-out"
               className="about-card"
             >
               <div className="img">
-                <img src="https://ik.imagekit.io/bhanu1776/Freelansters/bhanu.jpg?updatedAt=1682608756655" alt="" loading="lazy" />
+                <img src="https://i.ibb.co/CbsXDz8/316954731-3422522398025064-3713647465374653923-n.jpg" alt="" loading="lazy" />
               </div>
               <div className="info">
-                <h3>Bhanu Sunka</h3>
-                <span>Full Stack Developer</span>
+                <h3>Malek Elmechi</h3>
+                <span>UI UX Designer</span>
               </div>
               <ul className="social">
                 <li>
-                  <a
-                    href="https://github.com/Bhanu1776"
-                    className="fab fa-facebook"
-                  >
+                  <a href="/" className="fab fa-facebook">
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="fab fa-twitter">
                     <span></span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/SunkaBhanu"
-                    className="fab fa-twitter"
-                  >
-                    <span></span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/bhanu_1776/"
+                    href="/https://www.instagram.com/harsh_97"
                     className="fab fa-instagram"
                   >
                     <span></span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.linkedin.com/in/bhanu-sunka-94a24a21a/"
-                    className="fab fa-linkedin"
-                  >
+                  <a href="/" className="fab fa-linkedin">
                     <span></span>
                   </a>
                 </li>
@@ -262,11 +294,91 @@ const About = () => {
               className="about-card"
             >
               <div className="img">
-                <img src="https://ik.imagekit.io/bhanu1776/Freelansters/harsh.jpg?updatedAt=1682608753482" alt="" loading="lazy"/>
+                <img src="https://i.ibb.co/VgRrbb5/318033425-3431056957128924-194771035998363840-n.jpg" alt="" loading="lazy" />
               </div>
               <div className="info">
-                <h3>Harsh Dalvi</h3>
-                <span>Backend Developer</span>
+                <h3>Nouha Ben Hameda</h3>
+                <span>financial manager</span>
+              </div>
+              <ul className="social">
+                <li>
+                  <a href="/" className="fab fa-facebook">
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="fab fa-twitter">
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="fab fa-instagram"
+                  >
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="fab fa-linkedin">
+                    <span></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-out"
+              className="about-card"
+            >
+              <div className="img">
+                <img src="https://i.ibb.co/t2h1s09/354039834-3502038320052649-2773401873988210477-n.jpg" alt="" loading="lazy" />
+              </div>
+              <div className="info">
+                <h3>Imed Bouteraa</h3>
+                <span>Data Analyst</span>
+              </div>
+              <ul className="social">
+                <li>
+                  <a href="/" className="fab fa-facebook">
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="fab fa-twitter">
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    className="fab fa-instagram"
+                  >
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="fab fa-linkedin">
+                    <span></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-out"
+              className="about-card"
+            >
+              <div className="img">
+                <img src="https://i.ibb.co/GMmH7Vt/403707006-2600455873468165-3893149326980081633-n.jpg" alt="" loading="lazy" />
+              </div>
+              <div className="info">
+                <h3>Firas Ben Salem </h3>
+                <span>Frontend Developer</span>
               </div>
               <ul className="social">
                 <li>

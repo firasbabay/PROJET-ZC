@@ -35,7 +35,7 @@ const App = () => {
 
     const userHomePage = async () => {
         try {
-            const res = await fetch(process.env.BACKEND_URL +'/getdata', {
+            const res = await fetch(process.env.BACKEND_URL + '/getdata', {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -180,7 +180,7 @@ const App = () => {
                             data-aos-offset="350"
                             data-aos-duration="4000"
                             data-aos-easing="ease-out"
-                            id="feat-h1">Why to choose Freelanster ?</h1>
+                            id="feat-h1">Why to choose Freelansi?</h1>
                         <div
                             data-aos="fade-right"
                             data-aos-offset="300"
@@ -191,7 +191,8 @@ const App = () => {
                             data-aos-offset="400"
                             data-aos-duration="4000"
                             data-aos-easing="ease-out">
-                            <p id="feat-p">Working for yourself has several advantages, whether you do it by founding your own company or by accepting numerous assignments as a freelancer. Flexibility, freedom of choice in projects and clients, and financial potential are all benefits of working as freelancer. Many people in a variety of professions like to be their own boss, and freelancing is the simplest way to do so.</p>
+                            <p id="feat-p"> Our proposed platform aims to solve this problem by providing a comprehensive solution for technology-related tasks and physical services.
+                                For Tunisian freelancers, including those involved in construction, repair and services such as car washing and delivery, the platform offers a unique opportunity to showcase their skills and connect with a wider customer base.</p>
                         </div>
                         <div className="g-button-div">
                             <button

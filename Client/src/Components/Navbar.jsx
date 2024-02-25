@@ -63,7 +63,7 @@ const Navbar = (props) => {
         <nav id="navbar">
           <div className="d-logo">
             <span id="logo">
-              <img className="Logo" src="https://ik.imagekit.io/bhanu1776/Freelansters/freelansters-logo1.png?updatedAt=1682608753529" alt="Freelansters" loading="lazy" />
+              <img className="Logo" src="https://i.ibb.co/nMjgVwX/logo.png" alt="Freelansters" loading="lazy" />
             </span>
           </div>
           <ul>
@@ -288,3 +288,4 @@ const Wrapper = styled.section`
 `;
 
 export default Navbar;
+
