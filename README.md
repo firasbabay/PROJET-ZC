@@ -1,4 +1,4 @@
-<h1 align="center"> Freelansters - MERN Stack Web-Application </h1>
+<h1 align="center"> Freelanssi web app </h1>
 
 ## Technologies 🔧
 
