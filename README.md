@@ -1,4 +1,4 @@
-<h1 align="center"> Freelanssi web app </h1>
+<h1 align="center"> Freelansi web app </h1>
 
 ## Technologies 🔧
 
@@ -10,7 +10,7 @@
 - Styled Components
 - MUI
 - JWT Auth
-- Twilio
+
 
 
 
