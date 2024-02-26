@@ -17,7 +17,7 @@
 ## Installation 💾
 
 ```bash
-git clone https://github.com/Bhanu1776/Freelansters.git
+git clone https://github.com/firasbabay/PROJET-ZC.git
 ```
 
 Create config.env file in `backend` folder and Fill your `.env` variables:
